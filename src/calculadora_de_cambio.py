@@ -1,2 +1,6 @@
 def converter(valor, taxa):
-    return 0
+
+    resultado = valor * taxa
+    resultado = round(resultado, 2)
+
+    return resultado
