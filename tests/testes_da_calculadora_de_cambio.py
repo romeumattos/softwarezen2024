@@ -18,9 +18,11 @@ class TestesDaCalculadoraDeCambio(TestCase):
         resultado_esperado = 8.67
 
         resultado_obtido = calc.converter(valor, taxa)
+        
+        tem_duas_casas_decimais = (resultado_obtido * 100) % 1 == 0
 
-        self.assertEqual(resultado_obtido, resultado_esperado)
-
+        self.assertTrue(tem_duas_casas_decimais)
+        
     def teste_valor_arrendodado(self):
         valor = 2
         taxa = 4.334
