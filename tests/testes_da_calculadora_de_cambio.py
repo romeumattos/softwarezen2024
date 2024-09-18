@@ -13,7 +13,7 @@ class TestesDaCalculadoraDeCambio(TestCase):
 
         self.assertTrue(tem_duas_casas_decimais)
         
-    def teste_valor_arrendodado(self):
+    def teste_valor_arredondado(self):
         valor = 2
         taxa = 4.334
         resultado_esperado = 8.67
