@@ -1,6 +1,8 @@
+import math
+
 def converter(valor, taxa):
 
     resultado = valor * taxa
-    resultado = round(resultado, 2)
-
+    resultado = math.floor(resultado * 100) / 100
+    
     return resultado
